@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Sarpanch', sans-serif;
+}
+
+body {
+    /* background-color: #2A6F97; */
+    background-image: linear-gradient(to bottom right, #2A6F97, #A9D6E5);
+    color: white;
+}
+
+header {
+    display: grid;
+    width: 100vw;
+    height: 100px;
+    align-items: center;
+    justify-items: center;
+    font-size: 35px;
+}
+
+#app {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* border: 2px solid black; */
+    margin: auto;
+    height: 450px;
+    width: 450px;
+    /* border-radius: 15px; */
+    /* background-color: #012A4A; */
+}
+
+.square {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 10px solid #013A63;
+    height: 190px;
+    width: 190px;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #61A5C2;
+    /* box-shadow: 5px 5px 5px #013A63; */
+}
+
+:nth-child(3n) {
+    border-right: none;
+}
+
+:nth-child(n+1) {
+    border-left: none;
+    border-bottom: none;
+}
+
+:nth-child(n+1):nth-child(-n+3) {
+    border-top: none;
+}
+
+:nth-child(n+7):nth-child(-n+9) {
+    border-bottom: none;
+}
+
+.square:hover {
+    background-color: white;
+    color: #61A5C2;
+}

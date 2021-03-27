@@ -14,10 +14,15 @@ body {
 header {
     display: grid;
     width: 100vw;
-    height: 100px;
+    height: 150px;
     align-items: center;
     justify-items: center;
     font-size: 35px;
+}
+
+#reset {
+    margin: 5px;
+    padding: 5px;
 }
 
 #app {

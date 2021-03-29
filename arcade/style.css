@@ -6,7 +6,7 @@
 }
 
 body {
-    /* background-color: #2A6F97; */
+    min-height: 100vh;
     background-image: linear-gradient(to bottom right, #2A6F97, #A9D6E5);
     color: white;
 }
@@ -23,54 +23,80 @@ header {
 #reset {
     margin: 5px;
     padding: 5px;
+    border: 1px solid black
 }
 
 #app {
     display: grid;
+    grid-gap: 10px;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /* border: 2px solid black; */
     margin: auto;
     height: 450px;
     width: 450px;
-    /* border-radius: 15px; */
-    /* background-color: #012A4A; */
+    background-color: white;
 }
 
 .square {
     display: grid;
     align-items: center;
     justify-items: center;
-    border: 10px solid #013A63;
-    height: 190px;
-    width: 190px;
+    height: 100%;
+    width: 100%;
     font-size: 3rem;
     font-weight: bold;
     padding: 10px;
     background-color: #61A5C2;
-    /* box-shadow: 5px 5px 5px #013A63; */
 }
 
-:nth-child(3n) {
-    border-right: none;
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-:nth-child(n+1) {
-    border-left: none;
-    border-bottom: none;
+#reset {
+    margin: 5px;
+    padding: 10x 20px;
+    text-transform: uppercase;
+    background-color: white;
+    font-size: larger;
+    border: none;
 }
 
-:nth-child(n+1):nth-child(-n+3) {
-    border-top: none;
+#reset:hover {
+    background-color: #013A63;
+    color: white;
 }
 
-:nth-child(n+7):nth-child(-n+9) {
-    border-bottom: none;
+.game-message {
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.name-form {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.submit-button {
+    background-color: #2A6F97;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+}
+
+.submit-button:hover {
+    background-color: #A9D6E5;
+    color: #013A63;
 }
 
 .square:hover {
-    background-color: white;
-    color: #61A5C2;
+    background-color: #013A63;
+    color: white;
 }
